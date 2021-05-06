@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Ranking Project</title>
+    <link type="text/css" href="~/css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="container-fluid">
+            <h1 class="mt-4 text-center">WELCOME!</h1>
+            <div class="card">
+                <div class="card-header">
+                    <p class="text-center mt-4 text-wrap">
+                        This application retrieves scores from the last few games and ranks them against others. The API
+                        hits Rapid API for Modern Warfare Warzone, however the API requires 1 call per second.  This causes the load time to take
+                        sometime as it checks against all available systems.  If you're ready then click the button below.
+                    </p>
+                    <div class="mt-4 text-center">
+                        <input type="button" class="mt-4 bg-special_color text-dark" value="Player Scoreboard" onclick="location.href='@Url.Action("Index", "Player")'" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

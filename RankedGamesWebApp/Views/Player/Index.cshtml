@@ -1,0 +1,60 @@
+﻿@model IEnumerable<RankedGamesWebApp.Models.Player>
+
+@{
+    ViewData["Title"] = "Scoreboard Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Ranking Project</title>
+    <link type="text/css" href="~/css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body class="sb-nav-fixed">
+    <main>
+        <div class="container-fluid">
+            <h1 class="mt-4 text-center">Scoreboard</h1>
+            <ol class="breadcrumb mb-4">
+                <li class="breadcrumb-item active">Score for the top 5 matches out of your last 7 games.</li>
+            </ol>
+            <div class="card mb-6">
+                <div class="card-header">
+                    <i class="fas fa-table mr-1"></i>
+                    Rankings
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="score_dataTable" width="100%" cellspacing="0">
+                            <tr>
+                                <th>@Html.DisplayNameFor(model => model.Rank)</th>
+                                <th>@Html.DisplayNameFor(model => model.UserName)</th>
+                                <th>@Html.DisplayNameFor(model => model.Kills)</th>
+                                <th>@Html.DisplayNameFor(model => model.Deaths)</th>
+                                <th>@Html.DisplayNameFor(model => model.Score)</th>
+                            </tr>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.Rank</td>
+                                    <td>@item.UserName</td>
+                                    <td>@item.Kills</td>
+                                    <td>@item.Deaths</td>
+                                    <td>@item.Score</td>
+                                </tr>
+                            }
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
