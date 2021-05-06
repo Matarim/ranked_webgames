@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{D4EEF2FF-BA3C-4AE6-9510-7A42655C093D}|Default">
+  <MonoDevelop.Ide.ItemProperties.RankedGamesWebApp PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RankedGamesWebApp/Controllers/PlayerController.cs">
+    <Files>
+      <File FileName="RankedGamesWebApp/Controllers/PlayerController.cs" Line="48" Column="78" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RankedGamesWebApp" expanded="True">
+            <Node name="RankedGamesWebApp" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="PlayerController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
